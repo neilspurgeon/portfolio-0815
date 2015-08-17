@@ -3,44 +3,68 @@
 ---
 @charset "utf-8";
 
-// Font Variables
-$font-family: Helvetica, Arial, sans-serif;
-$font-size:   16px;
-$line-height: 1.5;
-
 // Color Variables
+// ––––––––––––––––––––––––––––––––––
 $black:     #000;
 $white:     #FFF;
+$ghost:     #C9C9C9;
 $dk-grey:   #333;
 $md-grey:   #666;
 $lt-grey:   #999;
 
 $trans-white: rgba(255, 255, 255, 0.93);
 
+// Font Variables
+// ––––––––––––––––––––––––––––––––––
+$font-family: Helvetica, Arial, sans-serif;
+$font-size:   16px;
+$line-height: 1.5;
+$body-color: $black;
+
 // Breakpoints
+// ––––––––––––––––––––––––––––––––––
 $small:   600px;
 $medium:  800px;
 $large:  1000px;
 
 
-// Using media queries with like this:
-// @include media-query($small) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+// Mixins
+// ––––––––––––––––––––––––––––––––––
+@mixin breakpoint($device) {
+  @media screen and (min-width: $device) {
+    @content;
+  }
 }
 
+@mixin vertical-align {
+  position: relative;
+  top: 48%;
+  -webkit-transform: translateY(-48%);
+  -ms-transform: translateY(-48%);
+  transform: translateY(-48%);
+}
 
+@mixin flush {
+  padding-left: 0;
+}
 
-// Import partials from `sass_dir` (defaults to `_sass`)
+// Utility Classes
+// ––––––––––––––––––––––––––––––––––
+.right {
+  float: right;
+  text-align: right;
+}
+
+// Import Partials
+// ––––––––––––––––––––––––––––––––––
 @import
-        "normalize",
-        "base",
-        "layout"
+  "../bower_components/normalize.css/normalize.css",
+  "../bower_components/susy/sass/susy",
+  "base",
+  "grid_settings",
+  "svg",
+  "layout",
+  "header",
+  "home",
+  "footer"
 ;

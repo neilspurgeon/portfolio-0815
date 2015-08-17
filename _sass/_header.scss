@@ -1,0 +1,29 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.navbar {
+  @include container;
+  margin: 1em 0;
+}
+
+.site-title {
+  @include span(2);
+}
+
+.site-nav {
+  @include span(2 last);
+  a {
+    margin-left: 1em;
+  }
+}
+
+

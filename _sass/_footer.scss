@@ -1,0 +1,28 @@
+// footer
+// ––––––––––––––––––––––––––––––––––
+
+.site-footer {
+  @include container;
+  position: relative;
+  padding: 3em 0;
+}
+
+.copyright {
+  @include span(4);
+  position: absolute;
+  bottom: 0;
+  color: $ghost;
+  @include breakpoint($medium) {
+    bottom: 3em;
+  }
+}
+
+.links, .contact {
+  @include span(4);
+  margin: 0 0 3em;
+  @include breakpoint($medium) {
+    @include span(1 at 4);
+    @include flush;
+  }
+  
+}

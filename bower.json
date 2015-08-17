@@ -1,0 +1,20 @@
+{
+  "name": "Neil Spurgeon Portfolio",
+  "version": "0.0.0",
+  "authors": [
+    "Neil <neilspurgeon@gmail.com>"
+  ],
+  "description": "Web development and design portfolio site.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.5",
+    "normalize.css": "~3.0.3"
+  }
+}

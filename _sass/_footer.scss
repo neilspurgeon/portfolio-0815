@@ -24,5 +24,12 @@
     @include span(1 at 4);
     @include flush;
   }
-  
+  a {
+    font-weight: $mono;
+    margin-right: 1em;
+  }
+}
+
+.contact a {
+  text-decoration: none;
 }

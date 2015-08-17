@@ -1,8 +1,21 @@
 html, body {
   height: 100%;
   transition: .5s ease all;
+  font-family: $font-family;
 }
 
 a, a:visited, a:hover {
   color: $body-color;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: $light;
+}
+
+.bold {
+  font-weight: $bold;
+}
+
+.mono {
+  font-weight: $mono;
 }

@@ -17,6 +17,7 @@
 
 .site-title {
   @include span(2);
+  font-weight: $bold;
 }
 
 .site-nav {

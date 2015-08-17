@@ -1,8 +1,17 @@
 ---
 layout: default
 ---
+<div class="project-container">
+  <div class="project-info">
+    <h1>{{page.title}}</h1>
+    <p>{{page.description}}</p>
+  </div>
 
-
-{{page.title}}
-
-{{content}}
+  <div class="project-images">
+    {{content}}
+  <!--   {% for image in page.images %}
+      <img src="{{image}}"/>img
+    {% endfor %} -->
+  </div>
+</div>
+{% include footer.html %}

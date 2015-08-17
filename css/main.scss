@@ -98,6 +98,10 @@ $large:  1000px;
   text-align: right;
 }
 
+.clearfix {
+  clear: both;
+}
+
 // Import Partials
 // ––––––––––––––––––––––––––––––––––
 @import
@@ -109,5 +113,6 @@ $large:  1000px;
   "layout",
   "header",
   "home",
-  "footer"
+  "footer",
+  "project"
 ;

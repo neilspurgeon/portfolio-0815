@@ -28,8 +28,8 @@ layout: default
         <a class="project-link" href="{{ project.url | prepend: site.baseurl }}">
           <div class="overlay">
             <div class="overlay-text">
-              {{project.title}}
-              {{project.categories}}
+              <h2>{{project.title}}</h2>
+              {{project.tags}}
             </div>
           </div>
           <img src="{{project.card_image}}">

@@ -1,0 +1,26 @@
+// Project
+// ––––––––––––––––––––––––––––––––––
+
+.project-container {
+    margin: 3em 0 0;
+}
+
+.project-info, .project-images {
+  @include span(4);
+}
+
+.project-info {
+  @include breakpoint($medium) {
+    @include span(1);
+    position: fixed;
+  }
+}
+
+.project-images {
+  @include breakpoint($medium) {
+    @include span(3 last);
+    img {
+      width: 100%;
+    }
+  }
+}

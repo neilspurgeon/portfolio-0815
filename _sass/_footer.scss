@@ -33,7 +33,7 @@
   @include span(4);
   margin: 0 0 3em;
   a {
-    font-weight: $mono;
+    font-weight: $light;
     margin-right: 1em;
   }
   @include breakpoint($medium) {

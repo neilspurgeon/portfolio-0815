@@ -6,6 +6,19 @@
 // Import Fonts
 // ––––––––––––––––––––––––––––––––––
 @font-face {
+    font-family: "Maison Neue";
+    src: url("../assets/fonts/maisonneue-light-webfont.eot");
+    src: url("../assets/fonts/maisonneue-light-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../assets/fonts/maisonneue-light-webfont.woff2") format("woff2"),
+         url("../assets/fonts/maisonneue-light-webfont.woff") format("woff"),
+         url("../assets/fonts/maisonneue-light-webfont.ttf") format("truetype"),
+         url("../assets/fonts/maisonneue-light-webfont.svg#maison_neuelight") format("svg");
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+@font-face {
   font-family: "Maison Neue";
   src: url("../assets/fonts/maisonneuebook.eot");
   src: url("../assets/fonts/maisonneuebook.eot?#iefix") format("embedded-opentype"),
@@ -13,7 +26,7 @@
        url("../assets/fonts/maisonneuebook.woff") format("woff"),
        url("../assets/fonts/maisonneuebook.ttf") format("truetype"),
        url("../assets/fonts/maisonneuebook.svg#maison_neuebook") format("svg");
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -57,11 +70,12 @@ $trans-white: rgba(255, 255, 255, 0.93);
 // ––––––––––––––––––––––––––––––––––
 $font-family: "Maison Neue";
 $light: 100;
+$book: 300;
 $bold: 600;
 $mono: 900;
-$font-size:   16px;
+$font-size:   15px;
 // $font-weight: $light;
-$line-height: 1.5;
+$line-height: 1.4;
 $body-color: $black;
 
 // Breakpoints

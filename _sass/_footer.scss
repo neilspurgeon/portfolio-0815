@@ -3,9 +3,14 @@
 
 .site-footer {
   @include container;
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: none;
   padding: 3em 0;
   clear: both;
+  z-index: -1;
 }
 
 .copyright {

@@ -4,6 +4,11 @@ html, body {
   font-family: $font-family;
 }
 
+body {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
 a, a:visited, a:hover {
   color: $body-color;
 }
@@ -12,12 +17,26 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: $light;
 }
 
+h1 {
+  font-size: 1.33em;
+  font-weight: $light;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: $bold;
+}
+
 .bold {
   font-weight: $bold;
 }
 
 .mono {
   font-weight: $mono;
+}
+
+p {
+
 }
 
 img {

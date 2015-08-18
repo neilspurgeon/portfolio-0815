@@ -29,7 +29,7 @@ layout: default
           <div class="overlay">
             <div class="overlay-text">
               <h2>{{project.title}}</h2>
-              {{project.tags}}
+              <p class="project-tags">{{project.tags}}</p>
             </div>
           </div>
           <img src="{{project.card_image}}">
@@ -38,7 +38,4 @@ layout: default
       {% endfor %}
     </div>
   </section>
-
-{% include footer.html %}
-
 </div>

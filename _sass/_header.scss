@@ -19,12 +19,18 @@
 .site-title {
   @include span(2);
   font-weight: $bold;
+  @include breakpoint($large) {
+    @include span(1 of 6);
+  }
 }
 
 .site-nav {
   @include span(2 last);
   a {
     margin-left: 1em;
+  }
+  @include breakpoint($large) {
+    @include span(2 of 6 last);
   }
 }
 

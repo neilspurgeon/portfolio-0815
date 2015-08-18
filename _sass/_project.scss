@@ -10,8 +10,8 @@
 }
 
 .project-info {
-  @include breakpoint($medium) {
-    @include span(1);
+  @include breakpoint($large) {
+    @include span(2 of 6);
     position: fixed;
   }
   p, h1 {
@@ -23,8 +23,8 @@
   margin: 0 0 50%;
   margin: 0 0 50vh;
   background-color: $white;
-  @include breakpoint($medium) {
-    @include span(3 last);
+  @include breakpoint($large) {
+    @include span(4 of 6 last);
     img {
       width: 100%;
     }

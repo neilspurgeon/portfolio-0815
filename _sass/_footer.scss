@@ -8,10 +8,10 @@
   left: 0;
   width: 100%;
   // display: none;
-  padding: 3em 0;
+  padding: 3em 0 2em;
   clear: both;
   z-index: -1;
-  height: 50vh;
+  // height: 50vh;
 }
 
 .copyright {
@@ -32,16 +32,37 @@
 .links, .contact {
   @include span(4);
   margin: 0 0 3em;
-  @include breakpoint($medium) {
-    @include span(1 at 4);
-    @include flush;
-  }
   a {
     font-weight: $mono;
     margin-right: 1em;
+  }
+  @include breakpoint($medium) {
+    padding: 0 0 1em;
+  }
+}
+
+.links {
+  @include breakpoint($small) {
+    @include span(2);
+  }
+  @include breakpoint($large) {
+    @include span(1 of 4 last);
+    @include flush;
+  }
+}
+
+.contact {
+  @include breakpoint($small) {
+    @include span(2 last);
+    @include flush;
+  }
+  @include breakpoint($large) {
+    @include span(1 of 4 last);
+    @include flush;
   }
 }
 
 .contact a {
   text-decoration: none;
 }
+

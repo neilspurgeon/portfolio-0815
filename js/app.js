@@ -2,11 +2,12 @@ $(function() {
   var windowLoc = $(location).attr('pathname');
   
   switch(windowLoc){      
-    case "/":
+    case '/':
       homeParallax();
+      animateScroll();
       console.log("home");
       break;
-    case "/alert.php":
+    case 'something':
       break;
   }
 
@@ -29,6 +30,27 @@ $(function() {
         footer.hide();
       }
     });
-  };
+  }
 
+  function animateScroll() {
+    var docWindow = $(window);
+    var workLink = $('.work-link');
+    var infoLink = $('.info-link');
+    var workTop = $('.work').offset().top;
+    var bottom = $(document).height();
+
+    workLink.on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: workTop
+      }, 500);
+    }); 
+
+    infoLink.on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: bottom
+      }, 500);
+    }); 
+  }
 });

@@ -75,20 +75,26 @@ $bold: 600;
 $mono: 900;
 $font-size:   15px;
 // $font-weight: $light;
-$line-height: 1.4;
+$line-height: 1.3;
 $body-color: $black;
 
 // Breakpoints
 // ––––––––––––––––––––––––––––––––––
-$small:   600px;
-$medium:  800px;
-$large:  1000px;
+$small:   500px;
+$medium:  700px;
+$large:  950px;
 
 
 // Mixins
 // ––––––––––––––––––––––––––––––––––
 @mixin breakpoint($device) {
   @media screen and (min-width: $device) {
+    @content;
+  }
+}
+
+@mixin verticalBreakpoint($verticalHeight) {
+  @media screen and (max-height: $verticalHeight) {
     @content;
   }
 }

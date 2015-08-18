@@ -13,6 +13,7 @@
   h1 {
     @include vertical-align;
     margin-top: 0;
+    font-size: 2em;
   }
 }
 
@@ -30,6 +31,14 @@
   background-color: $white;
   // min-height: 100%;
   // z-index: 9999;
+  @include verticalBreakpoint($medium) {
+    margin: 100% 0 100%;
+    margin: 101vh 0 100vh;
+    background-color: blue;
+  }
+  @include breakpoint($medium) {
+
+  }
 }
 
 // Work
@@ -58,7 +67,7 @@
     width: 50%;
     height: 50vw;
   }
-  @include breakpoint($medium) {
+  @include breakpoint($large) {
     width: 25%;
     height: 25vw;
   }

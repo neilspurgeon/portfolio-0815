@@ -20,6 +20,9 @@
 }
 
 .project-images {
+  margin: 0 0 50%;
+  margin: 0 0 50vh;
+  background-color: $white;
   @include breakpoint($medium) {
     @include span(3 last);
     img {

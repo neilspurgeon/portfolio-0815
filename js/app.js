@@ -1,17 +1,25 @@
 $(function() {
+
+  // runs functions depending on page
   var windowLoc = $(location).attr('pathname');
-  
-  switch(windowLoc){      
-    case '/':
-      homeParallax();
-      animateScroll();
-      console.log("home");
-      break;
-    default:
-      // extInfoLink();
-      projectParallax();
-      break;
+  function dynamicFunctions() {
+    switch(windowLoc){      
+      case '/':
+        homeParallax();
+        animateScroll();
+        console.log("home");
+        break;
+      default:
+        // extInfoLink();
+        projectParallax();
+        break;
+    }
   }
+
+  dynamicFunctions();
+
+  // reruns function when page is resized for correct parallax heights
+  $(window).bind("resize", dynamicFunctions);
 
   function homeParallax() {
     var docWindow = $(window);

@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-<div class="project-container">
-  
   <div class="project-info">
     <h3 class="label">Project</h3>
     <h1>{{page.title}}</h1>
@@ -14,7 +12,9 @@ layout: default
 
     {% if page.credits %}
       <h3 class="label">Credits</h3>
-      <div class="project-credits"><p>{{page.credits}}</p></div>
+      <div class="project-credits">
+        <p>{{page.credits}}</p>
+      </div>
     {% endif %}
   
   </div>
@@ -22,5 +22,3 @@ layout: default
   <div class="project-images">
     {{content}}
   </div>
-
-</div>

@@ -1,17 +1,14 @@
 // Project
 // ––––––––––––––––––––––––––––––––––
 
-.project-container {
-  margin: 3em 0 0;
-  float: left;
-  @include verticalBreakpoint($medium) {
-    margin-bottom: 100%;
-    margin-bottom: 100vh;
-  }
-}
+// img {
+//   opacity: .2;
+// }
 
 .project-info, .project-images {
+  margin-top: 3em;
   @include span(4);
+  clear: both;
 }
 
 .project-info {
@@ -25,11 +22,12 @@
 }
 
 .project-images {
-  margin: 0 0 50%;
-  margin: 0 0 50vh;
+  margin: 3em 0 50%;
+  margin: 3em 0 50vh;
   background-color: $off-white;
   @include verticalBreakpoint($medium) {
-    margin: 0;
+    margin-bottom: 100%;
+    margin-bottom: 100vh;
   }
   @include breakpoint($large) {
     @include span(4 of 6 last);

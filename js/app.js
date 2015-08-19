@@ -45,19 +45,19 @@ $(function() {
   function projectParallax() {
     var docWindow = $(window);
     var windowHieght = docWindow.height();
-    var content = $('.project-container');
+    var content = $('.project-images');
     var contentBottom = content.height() + content.offset().top - windowHieght;
     var footer = $('.site-footer');
 
-    footer.hide();
+    // footer.hide();
 
-    docWindow.scroll(function () {
-      if (docWindow.scrollTop() < contentBottom) {
-        footer.hide();
-      } else if (docWindow.scrollTop() >= contentBottom) {
-        footer.show();
-      }
-    });
+    // docWindow.scroll(function () {
+    //   if (docWindow.scrollTop() < contentBottom) {
+    //     footer.hide();
+    //   } else if (docWindow.scrollTop() >= contentBottom) {
+    //     footer.show();
+    //   }
+    // });
   }
 
   function animateScroll() {

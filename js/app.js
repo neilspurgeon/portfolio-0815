@@ -14,39 +14,40 @@ $(function() {
   }
 
   function homeParallax() {
-    var work = $('.work');
-    var topContainer = $('.main-content');
-    var topPosition = work.offset().top;
     var docWindow = $(window);
-    var landing = $('.landing');
+    var windowHieght = docWindow.height();
+    var content = $('.main-content');
+    var contentBottom = content.height() + content.offset().top - windowHieght;
     var footer = $('.site-footer');
+    var landing = $('.landing');
 
     footer.hide();
 
     docWindow.scroll(function () {
-      if (docWindow.scrollTop() > (topPosition * 0.7)) {
-        landing.hide(); 
-        footer.show();
-      } else if (docWindow.scrollTop() <= (topPosition * 0.7)) {
+      if (docWindow.scrollTop() < contentBottom) {
         landing.show(); 
         footer.hide();
+      } else if (docWindow.scrollTop() >= contentBottom) {
+        landing.hide(); 
+        footer.show();
       }
     });
   }
 
   function projectParallax() {
-    var project = $('.project-container');
-    var topPosition = project.offset().top;
     var docWindow = $(window);
+    var windowHieght = docWindow.height();
+    var content = $('.project-container');
+    var contentBottom = content.height() + content.offset().top - windowHieght;
     var footer = $('.site-footer');
 
     footer.hide();
 
     docWindow.scroll(function () {
-      if (docWindow.scrollTop() > (topPosition * 0.7)) {
-        footer.show();
-      } else if (docWindow.scrollTop() <= (topPosition * 0.7)) {
+      if (docWindow.scrollTop() < contentBottom) {
         footer.hide();
+      } else if (docWindow.scrollTop() >= contentBottom) {
+        footer.show();
       }
     });
   }

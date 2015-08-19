@@ -2,11 +2,7 @@
 // ––––––––––––––––––––––––––––––––––
 
 .project-container {
-    margin: 3em 0 0;
-    // @include verticalBreakpoint($medium) {
-    //   margin-bottom: 100%;
-    //   margin-bottom: 100vh;
-    // }
+  margin: 3em 0 0;
 }
 
 .project-info, .project-images {
@@ -32,6 +28,10 @@
     img {
       width: 100%;
     }
+  }
+  @include verticalBreakpoint($medium) {
+    margin-bottom: 100%;
+    margin-bottom: 100vh;
   }
 }
 

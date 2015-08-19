@@ -3,6 +3,10 @@
 
 .project-container {
     margin: 3em 0 0;
+    // @include verticalBreakpoint($medium) {
+    //   margin-bottom: 100%;
+    //   margin-bottom: 100vh;
+    // }
 }
 
 .project-info, .project-images {

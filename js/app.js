@@ -9,6 +9,7 @@ $(function() {
       break;
     default:
       // extInfoLink();
+      projectParallax();
       break;
   }
 
@@ -28,6 +29,23 @@ $(function() {
         footer.show();
       } else if (docWindow.scrollTop() <= (topPosition * 0.7)) {
         landing.show(); 
+        footer.hide();
+      }
+    });
+  }
+
+  function projectParallax() {
+    var project = $('.project-container');
+    var topPosition = project.offset().top;
+    var docWindow = $(window);
+    var footer = $('.site-footer');
+
+    footer.hide();
+
+    docWindow.scroll(function () {
+      if (docWindow.scrollTop() > (topPosition * 0.7)) {
+        footer.show();
+      } else if (docWindow.scrollTop() <= (topPosition * 0.7)) {
         footer.hide();
       }
     });
@@ -55,7 +73,7 @@ $(function() {
     }); 
   }
 
-  
+
   // Bug: not getting correct height probably because of images not being loaded
   // Redirecting to home page until fixed
 

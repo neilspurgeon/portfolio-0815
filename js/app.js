@@ -7,7 +7,8 @@ $(function() {
       animateScroll();
       console.log("home");
       break;
-    case 'something':
+    default:
+      // extInfoLink();
       break;
   }
 
@@ -53,4 +54,21 @@ $(function() {
       }, 500);
     }); 
   }
+
+  
+  // Bug: not getting correct height probably because of images not being loaded
+  // Redirecting to home page until fixed
+
+  // function extInfoLink() {
+  //   var infoLink = $('.info-link');
+  //   var bottom = $(document).height();
+
+  //   infoLink.on('click', function(e) {
+
+  //     e.preventDefault();
+  //     $('html, body').animate({
+  //       scrollTop: bottom
+  //     }, 500);
+  //   }); 
+  // }
 });

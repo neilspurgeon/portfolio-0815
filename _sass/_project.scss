@@ -3,6 +3,11 @@
 
 .project-container {
   margin: 3em 0 0;
+  float: left;
+  @include verticalBreakpoint($medium) {
+    margin-bottom: 100%;
+    margin-bottom: 100vh;
+  }
 }
 
 .project-info, .project-images {
@@ -23,15 +28,14 @@
   margin: 0 0 50%;
   margin: 0 0 50vh;
   background-color: $off-white;
+  @include verticalBreakpoint($medium) {
+    margin: 0;
+  }
   @include breakpoint($large) {
     @include span(4 of 6 last);
     img {
       width: 100%;
     }
-  }
-  @include verticalBreakpoint($medium) {
-    margin-bottom: 100%;
-    margin-bottom: 100vh;
   }
 }
 

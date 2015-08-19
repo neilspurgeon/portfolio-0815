@@ -1,8 +1,6 @@
 ---
 layout: project
-title: "Summit At Sea"
-card_image: /img/summit-at-seat-card.png
-tags: "Logo Design"
+title: "Art Student Survival Manual"
+card_image: /assets/thumbs/survival-manual.jpg
+tags: "Print Design"
 ---
-
-About Summit At Sea stuff ...

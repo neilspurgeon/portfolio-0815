@@ -1,8 +1,6 @@
 ---
 layout: project
-title: "Summit At Sea"
-card_image: /img/summit-at-seat-card.png
+title: "Taming of the Shrew"
+card_image: /assets/thumbs/shakespeare.jpg
 tags: "Print Design"
 ---
-
-About Summit At Sea stuff ...

@@ -5,10 +5,17 @@ layout: default
   <div class="project-info">
     <h3 class="label">Project</h3>
     <h1>{{page.title}}</h1>
-    <h3 class="label">Details</h3>
-    <p>{{page.description}}</p>
-    <h3 class="label">Credits</h3>
-    <div class="project-credits"><p>{{page.credits}}</p></div>
+    
+    {% if page.description %}
+      <h3 class="label">Details</h3>
+      <p>{{page.description}}</p>
+    {% endif %}
+
+    {% if page.credits %}
+      <h3 class="label">Credits</h3>
+      <div class="project-credits"><p>{{page.credits}}</p></div>
+    {% endif %}
+  
   </div>
 
   <div class="project-images">

@@ -2,7 +2,7 @@
 layout: project
 title: "Just Label It"
 card_image: /assets/thumbs/just-label-it.jpg
-tags: "Print Design"
+tags: "Print&nbsp;Design"
 credits: "Photos: R.c. Kahler"
 description: "Folded mailer for Just Label it!, an organization promoting the labeling of genetically modified foods in California. 
 Consists of outside mailing panels, inside spread detailing the importance of labeling GMO’s, and a fold out poster on the back."

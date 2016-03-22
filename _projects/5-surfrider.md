@@ -2,7 +2,7 @@
 layout: project
 title:  "Surfrider Foundation"
 card_image: /assets/thumbs/surfrider.jpg
-tags: "Print Design"
+tags: "Print&nbsp;Design"
 credits: "Photos: R.c. Kahler"
 description: "Promotional gate–fold booklet aimed towards gaining new donors. Inside spreads list Surfrider’s core principles and 
 why it’s important to protect the ocean and coastline. Inside back cover gives a call to action and outlines how to donate and 

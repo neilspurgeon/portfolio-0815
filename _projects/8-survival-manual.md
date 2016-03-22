@@ -2,7 +2,7 @@
 layout: project
 title: "Art Student Survival Manual"
 card_image: /assets/thumbs/survival-manual.jpg
-tags: "Print Design"
+tags: "Print&nbsp;Design"
 credits:
 description: "8.5″ × 5″ saddle stitched handbook for new students entering Art & Design at Cal Poly written by existing students."
 ---

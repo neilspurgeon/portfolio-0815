@@ -2,7 +2,7 @@
 layout: project
 title:  "Panama Guitars"
 card_image: /assets/thumbs/panama.jpg
-tags: "Print Design"
+tags: "Print&nbsp;Design"
 credits: "Designed at Indicate Design Groupe<br/>Creative Director: Rich Hansen<br/>Logo Design: Rich Hansen"
 description: "Designed brand collateral including hangtags, speaker labels, spec sheets, and website graphics."
 ---
